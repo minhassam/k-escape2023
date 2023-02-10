@@ -53,7 +53,7 @@ function to2() {
 	function ans()
 	{
 		if(input.value == "1009")
-			location.href="./page02_raon.html";
+			location.href="./page02_한글날.html";
 		else
 		{
 			input.style.animation='shake 0.5s';
