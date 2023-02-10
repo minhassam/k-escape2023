@@ -2,35 +2,64 @@
 <html>
 
   <head>
-    <title> K-학기말 방탈출 </title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./code_page/style.css">
-    <script type="text/javascript" src="./code_page/script.js"></script>
+      <title> K-학기말 방탈출 </title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="./style.css">
+      <script type="text/javascript" src="./script.js"></script> 
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
   </head>
 
     <body>
 
-      <div class="intro">
-        <h3> 여러분 ❤️ 한 학기 동안 국어 수업 듣느라 수고했어요! 
-             한 학기 마무리로 방탈출을 해볼까요? </h3>
-        <h3> 먼저 인사를 할까요? 우리가 항상 하는 인사 'ㅅㄹㅎㄴㄷ'는 무엇일까요? </h3>
-        <h3> 아래 빈칸에 정답을 입력해서 방탈출을 시작해보아요! </h3>
+      <br>
+      <div class problem_box style="border:red; border-width:3px; border-style:solid;">
+         <h1 style="color:white">  　행복한 국어교실  </h1>
+      </div>
+
+
+      <div class="story">
+
+         <br>
+         <pre style="font-size: 20px;">
+         
+         오 대단한대? 다음 문제 풀어보자
+
+
+         </pre>
+         <br>
+
+         <h4> 앗...여긴 어디지? </h4>
+
+         <img src = "../image/page1-1.png" width="170" height="150">
+         <h4 style="color:blue;"> 짜잔! 너를 도와줄 국어 요정 등장! </h4>
+         <h4> 아 깜짝이야! </h4>
+
+      </div>
+
+      <div class="problem">
+         
+         <h4> 깜짝 놀란 당신! 지금부터 문제를 풀어보자! 
+              [문제] 한글날은 언제일까요? </h4>
+         <h5> [힌트] 네자리 </h5>
+         <h5> [정답 유형] 숫자만 입력하세요 </h5>
+
       </div>
 
 
       <div class="container">
 
         <div class="form">
-          <div class="form__group field">
-            <!-- ☆★☆★☆★ to1() 부분을 수정하여 연결할 함수 설정 ★☆★☆★☆ -->
-            <input type="text" class="form__field" placeholder=" " id='input' onkeydown="to1()">
+          <div class="form__group field" onclick="ans_init()">
+            <!-- ☆★☆★☆★ to2() 부분을 수정하여 연결할 함수 설정 ★☆★☆★☆ -->
+            <input type="text" class="form__field" placeholder=" " id='input' onkeydown="to2()">
             <label for="answer" class="form__label">정답</label>
             <span class="error" id="errorname"></span>
           </div>
         </div>
 
-        <!-- ☆★☆★☆★ to1() 부분을 수정하여 연결할 함수 설정 ★☆★☆★☆ -->
-        <div class="check" id="check" onclick="to1()">
+        <!-- ☆★☆★☆★ to2() 부분을 수정하여 연결할 함수 설정 ★☆★☆★☆ -->
+        <div class="check" id="check" onclick="to2()">
            <div class="btn">
               <div class="shop-now">확인</div>
               <div class="snowflake-grid to-left">
@@ -84,6 +113,33 @@
            </div>
         </div>
       </div>
+
+
+      <div class="notice">
+         <br>
+         <br>
+         <hr>
+
+         <h3> ㅡ 게임 안내 ㅡ </h3>
+
+         <div style="line-height:20%;"> <!-- 하위 줄높이를 50%만큼 적게 설정 -->
+            <br>
+         </div>
+
+         <pre style="font-size: 20px;">
+본 게임은 AI교육과 관련된 내용으로 구성된 미궁 게임입니다.
+
+문제는 이야기를 기반으로 출제되지만, 이야기는 문제 해결과는 관련이 없습니다.
+
+문제를 풀고 정답을 입력한 후 확인을 누르면 다음 방으로 이동할 수 있습니다.
+</pre>
+
+         <hr>
+         <br>
+         <br>
+      </div>
+
+
 
   </body>
 
